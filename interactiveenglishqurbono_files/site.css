@@ -69,11 +69,23 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
-.rubric-text, .liturgical-text, .person-text{
+.rubric-text, .liturgical-text, .person-text, .text-row{
   font-family: Georgia, 'Times New Roman', Times, serif!important;
 }
 .text-row:hover{
   background-color:#f6f6f6;
+}
+.text-row h4{
+  position:absolute;
+  top:0;
+  left:-5rem;
+  font-size: .75rem;
+  color:darkblue;
+  display: none;
+  width: 5rem;
+}
+.text-row:hover h4{
+  display:block;
 }
 .person-text{
   
