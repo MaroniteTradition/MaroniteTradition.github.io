@@ -61,6 +61,8 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+  background-color: rgb(245, 243, 238);
+
 }
 .footer {
   position: absolute;
@@ -73,7 +75,7 @@ body {
   font-family: Georgia, 'Times New Roman', Times, serif!important;
 }
 .text-row:hover{
-  background-color:#f6f6f6;
+  background-color:rgba(255, 255, 255, 0.185);
 }
 .text-row h4{
   position:absolute;
@@ -129,4 +131,30 @@ h1{
 h2{
   text-decoration: underline;
   font-size: 3rem;
+}
+.variable-part{
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  position: relative;
+  padding-top:.75rem;
+}
+.variable-part::before{
+  content: 'Variable part';
+  display: block;
+  position: absolute;
+  top:-1px;
+  left:0;
+  padding: 2px 3px 0;
+  font-size: .75rem;
+  color:#f00;
+  border-right:1px solid red;
+  border-bottom:1px solid red;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  opacity:.7;
+}
+.variable-part+.variable-part{
+  border-top: none;
+  padding-top:0;
+} 
+.variable-part+.variable-part::before{
+  display:none;
 }
